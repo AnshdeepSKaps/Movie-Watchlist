@@ -18,7 +18,7 @@ export default class SearchDropDown extends Component {
 
     handleAdd = async () => {
 
-        const resp = await fetch('http://localhost:5000/', {
+        const resp = await fetch('https://mern-watch-list.herokuapp.com/', {
             method: "POST",
             headers: {
                 "Accept": "application/json",

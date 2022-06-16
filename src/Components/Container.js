@@ -10,7 +10,7 @@ export default class Container extends Component {
     }
 
     getMovies = async () => {
-        const m = await fetch("http://localhost:5000/movies")
+        const m = await fetch("https://mern-watch-list.herokuapp.com/movies")
         const mov = await m.json()
         this.setState({ movies: mov })
     }

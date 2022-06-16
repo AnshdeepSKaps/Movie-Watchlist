@@ -4,7 +4,7 @@ export default class Card extends Component {
 
     handleRemove = async (event) => {
 
-        const data = await fetch("http://localhost:5000/movies/remove", {
+        const data = await fetch("https://mern-watch-list.herokuapp.com/movies/remove", {
             method: "POST",
             headers: {
                 "Accept": "application/json",
